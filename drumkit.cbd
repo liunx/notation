@@ -1,0 +1,32 @@
+@this is meta info
+title : "drumkit"
+composer: "Coderband"
+tempo : 120
+timesign : 4/4
+
+@this is tracks
+beats01: (melody01, Percussion, 0, F)
+
+bp01: [ chord{CC8 BB-8} BB-8 chord{CC#8 BB-8} BB-8 chord{CC8 BB-8} 
+        chord{CC8 BB-8} chord{CC#8 BB-8} BB-8 ]
+bp02: [ chord{CC4 CC#4} chord{CC4 CC#4} chord{CC4 CC#4} chord{CC4 CC#4} ]
+bp03: [ chord{CC16 BB-16} BB-16 BB-16 BB-16
+        chord{CC#16 BB-16} BB-16 BB-16 BB-16
+        chord{CC16 BB-16} BB-16 BB-16 BB-16 
+        chord{CC16 BB-16} BB-16 chord{CC#16 BB-16} BB-16]
+
+disco01: [ chord{CC8 BB-8} BB-8 chord{CC8 CC#8 BB-8} BB-8
+           chord{CC8 BB-8} BB-8 chord{CC8 CC#8 BB-8} BB-8 ]
+disco02: [ CC8 FF#8 chord{CC8 CC#8} FF#8
+           CC8 FF#8 chord{CC8 CC#8} FF#8 ]
+disco03: [ chord{CC8 BB-8} BB-16 BB-16 chord{CC8 CC#8 BB-8} BB-16 BB-16
+           chord{CC8 BB-8} BB-16 BB-16 chord{CC8 CC#8 BB-8} BB-16 BB-16 ]
+dance01: [ chord{CC8 BB-8} BB-8 chord{CC#8 BB-8} chord{CC8 BB-8}
+           chord{CC8 BB-8} chord{CC#8 BB-8} BB-8]
+funky01: [ chord{CC16 BB-16} r16 BB-16 CC16]
+
+>>
+beats01-> [ $disco01 $disco01 $disco02 $disco02 ]
+beats01-> [ $disco03 $disco03 $dance01 $dance01 ]
+beats01-> [ $funky01 ]
+<<
