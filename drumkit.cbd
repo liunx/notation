@@ -6,6 +6,7 @@ timesign : 4/4
 
 @this is tracks
 beats01: (melody01, Percussion, 0, F)
+beats02: (melody01, Percussion, 0, F)
 
 bp01: [ chord{CC8 BB-8} BB-8 chord{CC#8 BB-8} BB-8 chord{CC8 BB-8} 
         chord{CC8 BB-8} chord{CC#8 BB-8} BB-8 ]
@@ -46,16 +47,28 @@ cym06: [ B4 B4 B4 B4 B4 ]
 @BassDrum:CC,SideStick:CC#,OpenHiHat:BB-,RideCymbal1:D#
 bp01: [ CC4 r4 CC#4 r4 ]
 bp02: [ CC4 r4 CC#4 r8 CC8 ]
-bp03: [ chord{CC4 D#4} D#4 chord{CC#4 D#4} D#4 ]
+bp03: [ chord{CC4 FF#4} FF#4 chord{CC#4 FF#4} FF#4 ]
+bp04: [ chord{CC4 FF#4} FF#4 chord{CC#4 FF#4} FF#8 CC8 ]
+bp05: [ CC4 CC4 CC4 CC4 ]
 
+@BassDrum:CC,AcousticSnare:DD
+bdas01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8
+          chord{CC8 FF#8} chord{CC8 FF#8} chord{DD8 FF#8} FF#8 ]
+rock01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} chord{CC8 FF#8}
+          chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8 ]
+
+@playback
 beats01-> [ $disco01 $disco01 $disco02 $disco02 ]
 beats01-> [ $disco03 $disco03 $dance01 $dance01 ]
 beats01-> [ $funky01 ]
 beats01-> [ $rhythm01 $rhythm02 $rhythm01 $rhythm02 ]
 beats01-> [ $bs01 $bs01 $bs01 $bs01 ]
->>
 beats01-> [ $hihat01 $hihat02 $hihat03 $hihat03 ]
 beats01-> [ $cym01 $cym02 $cym03 $cym04 $cym05 $cym06 ]
-<<
 beats01-> [ $bp01 $bp02 $bp01 $bp02 ]
-beats01-> [ $bp03 $bp03 $bp03 $bp03 ]
+beats01-> [ $bp03 $bp04 $bp03 $bp04 ]
+beats01-> [ $bp05 $bp05 $bp05 $bp05 ]
+beats01-> [ $bdas01 $bdas01 $bdas01 $bdas01 ]
+>>
+beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
+<<
