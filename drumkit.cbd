@@ -1,7 +1,7 @@
 @this is meta info
 title : "drumkit"
 composer: "Coderband"
-tempo : 120
+tempo : 90
 timesign : 4/4
 
 @this is tracks
@@ -25,8 +25,37 @@ dance01: [ chord{CC8 BB-8} BB-8 chord{CC#8 BB-8} chord{CC8 BB-8}
            chord{CC8 BB-8} chord{CC#8 BB-8} BB-8]
 funky01: [ chord{CC16 BB-16} r16 BB-16 CC16]
 
->>
+rhythm01: [ chord{CC8 BB-8} BB-16 BB-16 chord{CC#8 BB-8} BB-16 BB-16
+            chord{CC8 BB-8} chord{CC16 BB-16} BB-16 chord{CC#8 BB-8} BB-16 BB-16 ]
+rhythm02: [ chord{CC8 BB-8} BB-16 BB-16 chord{CC#8 BB-8} BB-16 chord{CC16 BB-16}
+            chord{CC8 BB-8} chord{CC16 BB-16} BB-16 chord{CC#8 BB-8} BB-16 BB-16 ]
+@BassDrum & SnaureDrum & SideStick
+bs01: [ CC4 CC#4 DD4 CC#4 ]
+@ClosedHiHat:FF#,PedalHiHat:GG#,OpenHiHat:BB-
+hihat01: [ FF#4 FF#4 FF#4 FF#4 ]
+hihat02: [ GG#4 GG#4 GG#4 GG#4 ]
+hihat03: [ BB-4 BB-4 BB-4 BB-4 ]
+@CrashCymbal1:C#,RideCymbal1:D#,ChineseCymbal:E,SplashCymbal:G,CrashCymbal2:A,RideCymbal2:B
+cym01: [ C#4 C#4 C#4 C#4 C#4 ]
+cym02: [ D#4 D#4 D#4 D#4 D#4 ]
+cym03: [ E4 E4 E4 E4 E4 ]
+cym04: [ G4 G4 G4 G4 G4 ]
+cym05: [ A4 A4 A4 A4 A4 ]
+cym06: [ B4 B4 B4 B4 B4 ]
+
+@BassDrum:CC,SideStick:CC#,OpenHiHat:BB-,RideCymbal1:D#
+bp01: [ CC4 r4 CC#4 r4 ]
+bp02: [ CC4 r4 CC#4 r8 CC8 ]
+bp03: [ chord{CC4 D#4} D#4 chord{CC#4 D#4} D#4 ]
+
 beats01-> [ $disco01 $disco01 $disco02 $disco02 ]
 beats01-> [ $disco03 $disco03 $dance01 $dance01 ]
 beats01-> [ $funky01 ]
+beats01-> [ $rhythm01 $rhythm02 $rhythm01 $rhythm02 ]
+beats01-> [ $bs01 $bs01 $bs01 $bs01 ]
+>>
+beats01-> [ $hihat01 $hihat02 $hihat03 $hihat03 ]
+beats01-> [ $cym01 $cym02 $cym03 $cym04 $cym05 $cym06 ]
 <<
+beats01-> [ $bp01 $bp02 $bp01 $bp02 ]
+beats01-> [ $bp03 $bp03 $bp03 $bp03 ]
