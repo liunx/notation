@@ -12,7 +12,7 @@ oboe: (melody06, Oboe, 0, F)
 female: (melody07, ChoirAahs, 0, F)
 male: (melody08, ChoirAahs, 0, F)
 beats01: (beats01, Percussion, 0, F)
-@TODO add Bass
+bass01: (bass01, EPBass, -12, F)
 
 @ rhythm patterns
 C: [ C8 E8 G8 c8 G8 c8 G8 c8 ]
@@ -29,9 +29,16 @@ bp01: [ CC4 r4 CC#4 r4 ]
 bp02: [ CC4 r4 CC#4 r8 CC8 ]
 bp03: [ chord{CC4 FF#4} FF#4 chord{CC#4 FF#4} FF#4 ]
 bp04: [ chord{CC4 FF#4} FF#4 chord{CC#4 FF#4} FF#8 CC8 ]
-intro01: [ chord{CC4 DD4} chord{CC4 DD4} chord{CC4 DD4} chord{CC4 DD4} ]
+@intro01: [ chord{CC4 DD4} chord{CC4 DD4} chord{CC4 DD4} chord{CC4 DD4} ]
+intro01: [ chord{CC8 DD8} DD8 chord{CC8 DD8} DD8 chord{CC8 DD8} DD8 chord{CC4 DD4} ]
 rock01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} chord{CC8 FF#8}
           chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8 ]
+@Bass rhythm
+bass_c: [ C8 C8 r4 C8 C8 r8 C8 ]
+bass_d: [ D8 D8 r4 D8 D8 r8 D8 ]
+bass_f: [ FF8 FF8 r4 FF8 FF8 r4 ]
+bass_g: [ GG8 GG8 r4 GG8 GG8 r4 ]
+bass_a: [ AA8 AA8 r4 AA8 AA8 r4 ]
 
 @playback
 >>
@@ -104,16 +111,19 @@ strings-> [ d'1 | r1 | r1 | r1 ]
 oboe-> [ d1 | r1 | r1 | r1 ]
 male-> [ r1 | GG4 C2 E8. E16 | D2 r4 D4 | F2 r8 E8 C8 E8 ]
 beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
+bass01-> [ $bass_g | $bass_c | $bass_g | $bass_d ]
 --
 mchord-> [ $G_1 | $Am | $G_0 | $Dm ]
 female-> [ r2 r4 r4 | a4 f'2 e'8. e'16 | d'2 r4 d'4 | f'2 r8 e'8 c'8 e'8 ]
 male-> [ D2 r2 | r1 | r1 | r1 ]
 beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
+bass01-> [ $bass_g | $bass_a | $bass_g | $bass_d ]
 --
 mchord-> [ $G_1 | $C | $F | $Am ]
 female-> [ d'2 r4 r8 c'8 | e'4. e'8 f'8 e'8 d'8 c'8 | e'4. f'8 f'4 r8 c'8 | e'4. e'8 e'8 c'8 d'8 e'8 ]
 male-> [ r2 r4. C8 | E4. E8 F8 E8 D8 C8 | E4. F8 F4 r8 C8 | E4. E8 E8 C8 D8 E8 ]
 beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
+bass01-> [ $bass_g | $bass_c | $bass_f | $bass_a ]
 --
 mchord-> [ $G_0 | r1 | r1 | r1 ]
 female-> [ d'2 r2 | r1 | g4 c'2 e'8. e'16 | d'2 r4 d'4 ]

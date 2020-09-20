@@ -1,0 +1,22 @@
+title : "Bass Rhythms"
+composer: "Coderband"
+tempo : 90
+timesign : 4/4
+
+@tracks
+bass01: (bass01, EPBass, -12, F)
+beats01: (beats01, Percussion, 0, F)
+
+@rhythms
+rock01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} chord{CC8 FF#8}
+          chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8 ]
+bass_c01: [ C8 C8 r4 C8 C8 r4 ]
+bass_c02: [ C8 C8 GG8 C8 C8 C8 GG8 C8 ]
+bass_f01: [ FF8 FF8 r4 FF8 FF8 r4 ]
+bass_g01: [ GG8 GG8 r4 GG8 GG8 r4 ]
+
+@playback
+>>
+bass01-> [ $bass_c01 $bass_c02 ]
+beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
+<<
