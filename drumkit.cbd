@@ -57,6 +57,8 @@ bdas01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8
 rock01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} chord{CC8 FF#8}
           chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8 ]
 
+march01: [ CC4 CC4 DD4 r4 ]
+
 @playback
 beats01-> [ $disco01 $disco01 $disco02 $disco02 ]
 beats01-> [ $disco03 $disco03 $dance01 $dance01 ]
@@ -69,6 +71,7 @@ beats01-> [ $bp01 $bp02 $bp01 $bp02 ]
 beats01-> [ $bp03 $bp04 $bp03 $bp04 ]
 beats01-> [ $bp05 $bp05 $bp05 $bp05 ]
 beats01-> [ $bdas01 $bdas01 $bdas01 $bdas01 ]
->>
 beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
+>>
+beats01-> [ $march01 $march01 ]
 <<

@@ -34,6 +34,10 @@ bp04: [ chord{CC4 FF#4} FF#4 chord{CC#4 FF#4} FF#8 CC8 ]
 intro01: [ chord{CC8 DD8} DD8 chord{CC8 DD8} DD8 chord{CC8 DD8} DD8 chord{CC4 DD4} ]
 rock01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} chord{CC8 FF#8}
           chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8 ]
+march01: [ CC4 r4 chord{CC4 DD4} r4 ]
+march02: [ CC4 r8 CC8 chord{CC4 DD4} r4 ]
+finalbt: [ chord{CC16 DD16} DD16 DD16 DD16 chord{CC16 DD16} DD16 DD8
+               chord{CC8 DD8} DD8 chord{CC4 DD4} ]
 @Bass rhythm
 bass_c: [ C8 C8 r4 C8 C8 r8 C8 ]
 bass_d: [ D8 D8 r4 D8 D8 r8 D8 ]
@@ -119,19 +123,20 @@ male-> [ D2 r2 | r1 | r1 | r1 ]
 beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
 bass01-> [ $bass_g | $bass_a | $bass_g | $bass_d ]
 --
->>
 mchord-> [ $G_1 | $C | $F | $Am ]
 female-> [ d'2 r4 r8 c'8 | e'4. e'8 f'8 e'8 d'8 c'8 | e'4. f'8 f'4 r8 c'8 | e'4. e'8 e'8 c'8 d'8 e'8 ]
 male-> [ r2 r4. C8 | E4. E8 F8 E8 D8 C8 | E4. F8 F4 r8 C8 | E4. E8 E8 C8 D8 E8 ]
 beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
 bass01-> [ $bass_g | $bass_c | $bass_f | $bass_a ]
 --
+>>
 mchord-> [ $G_0 | r1 | r1 | r1 | r1 ]
-female-> [ d'2 r2 | r1 |r1 | g4 c'2 e'8. e'16 | d'2 r4 d'4 ]
-male-> [ D2 r2 | r1 | r1 | GG4 C2 E8. E16 | D2 r4 D4 ]
-organ-> [ r2 C2~ | C1~ | C1~ | C1  | r1 ]
-beats01-> [ $intro01 | r1 | r1 | r1 | r1 ]
+female-> [ d'2 r2 | r1 |r1 | r1 | g4 c'2 e'8. e'16 | d'2. r4 ]
+male-> [ D2 r2 | r1 | r1 | r1 | GG4 C2 E8. E16 | D2. r4 ]
+organ-> [ r2 C2~ | C1~ | C1~ | C1 | r1  | r1 ]
+beats01-> [ $intro01 | r1 r1 | FF#4 FF#4 FF#4 FF#4  | $march01 | $march02 ]
 --
-female-> [ f'2 e'8. e'16 d'4~ | d'4 r4 e'4. e'8 | e'2 e'2 | e'1~ | e'1 ]
-male-> [ F2 E8. E16 D4~ | D4 r4 E4. E8 | E2 E2 | E1~ | E1 ]
+female-> [ d'4 f'2 e'8. e'16 | d'2 e'4. e'8 | e'2 e'2 | e'1~ | e'1 ]
+male-> [ D4 F2 E8. E16 | D2 E4. E8 | E2 E2 | E1~ | E1 ]
+beats01-> [ $march01 | $march02 | chord{CC4 C#4} r4 chord{CC4 C#4} r4 | $finalbt ]
 <<
