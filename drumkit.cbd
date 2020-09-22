@@ -56,8 +56,15 @@ bdas01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8
           chord{CC8 FF#8} chord{CC8 FF#8} chord{DD8 FF#8} FF#8 ]
 rock01: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} chord{CC8 FF#8}
           chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8 ]
+final: [ chord{CC16 DD16} DD16 DD16 DD16 chord{CC8 DD8} DD8 
+         chord{CC4. DD4.} DD8 chord{CC16 DD16} DD16 DD8 ]
+bd01: [ CC16 CC16 CC16 CC16 CC16 CC16 CC8 CC8 CC8 CC4 ]
 
 march01: [ CC4 CC4 DD4 r4 ]
+@LowFloorTom:FF,HighFloorTom:GG,LowTom:AA,LowMidTom:BB,HiMidTom:C,HighTom:D
+tom01: [ FF8 FF8 GG8 GG8 AA8 AA8 BB8 BB8 ]
+tom02: [ FF8 GG8 AA8 BB8 FF8 GG8 AA8 BB8 ]
+tom03: [ AA16 D16 AA16 D16 AA16 D16 AA16 D16 AA16 D16 AA16 D16 AA16 D16 AA16 D16 ]
 
 @playback
 beats01-> [ $disco01 $disco01 $disco02 $disco02 ]
@@ -73,5 +80,5 @@ beats01-> [ $bp05 $bp05 $bp05 $bp05 ]
 beats01-> [ $bdas01 $bdas01 $bdas01 $bdas01 ]
 beats01-> [ $rock01 $rock01 $rock01 $rock01 ]
 >>
-beats01-> [ $march01 $march01 ]
+beats01-> [ $bd01 ]
 <<
