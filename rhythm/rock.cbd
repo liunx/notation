@@ -1,0 +1,31 @@
+title : "rock and roll"
+composer: "Coder Band"
+tempo : 90
+style: "Rock"
+timesign : 4/4
+
+@tracks
+rhythm01: (melody01, Percussion, 0, F)
+
+@patterns
+rock01: [ CC8 r8 DD8 CC8 CC8 r8 DD8 r8 ]
+rock01_1: [ CC8 r8 | DD16 DD16 CC8 | CC8 r8 DD8 r8 ]
+rock01_2: [ CC8 r8 DD8 CC8 CC8 r8 DD8 DD8 ]
+rock01_3: [ CC8 r8 DD8 CC8 CC8 CC8 DD8 DD16 DD16 ]
+rock01_4: [ CC8 r8 DD8 CC8 CC8 CC8 | DD16 DD16 DD8 ]
+
+rock02: [ chord{CC8} FF#8 chord{DD8} chord{CC8}
+          chord{CC8} FF#8 chord{DD8} FF#8 ]
+rock03: [ chord{CC8 FF#8} FF#8 chord{DD8 FF#8} chord{CC8 FF#8}
+          chord{CC8 FF#8} FF#8 chord{DD8 FF#8} FF#8 ]
+
+@playback
+rhythm01-> [ $rock01 $rock01 $rock01 $rock01 ]
+rhythm01-> [ $rock01_1 $rock01_1 $rock01_1 $rock01_1 ]
+rhythm01-> [ $rock01_2 $rock01_2 $rock01_2 $rock01_2 ]
+>>
+rhythm01-> [ $rock01_3 $rock01_3 $rock01_3 $rock01_3 ]
+rhythm01-> [ $rock01_4 $rock01_4 $rock01_4 $rock01_4 ]
+<<
+rhythm01-> [ $rock02 $rock02 $rock02 $rock02 ]
+rhythm01-> [ $rock03 $rock03 $rock03 $rock03 ]
